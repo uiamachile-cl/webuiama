@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Y CORPORACIÓN UIAMA CHILE - Unión Internacional de Artistas Marciales y de Artes Internas</title>
+  <meta name="description" content="Plataforma oficial de la ONG Y CORPORACIÓN UIAMA CHILE. Personería Jurídica Nº 254.537. Uniendo escuelas, instructores y maestros de artes marciales en Chile y el mundo. Correo: uiamachile@gmail.com">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Ticker -->
+  <div class="top-ticker">
+    <div class="container" style="overflow: hidden;">
+      <div id="ticker-wrapper" class="ticker-content">
+        <!-- Dynamic Ticker populated by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <img src="assets/logo_official.png" alt="Emblema Oficial UIAMA Chile">
+        <div>
+          <div class="brand-title font-heading">UIAMA CHILE</div>
+          <div class="brand-subtitle">PJ Nº 254.537 &bull; MINJU</div>
+        </div>
+      </a>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Acerca de</a></li>
+        <li><a href="#board" class="nav-link">Directiva</a></li>
+        <li><a href="#members" class="nav-link">Miembros</a></li>
+        <li><a href="#gallery" class="nav-link">Galería</a></li>
+        <li><a href="#arbitration" class="nav-link">Arbitraje</a></li>
+        <li><a href="#resources" class="nav-link">Recursos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle" title="Cambiar Tema Dark/Light">
+          <i id="theme-icon" class="fa-solid fa-sun"></i>
+        </button>
+        <button id="open-admin-btn" class="btn btn-gold btn-sm">
+          <i class="fa-solid fa-sliders"></i> Panel CRUD
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir Menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Areas -->
+  <main id="home">
+
+    <!-- Hero Banner Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="badge-pj">
+          <i class="fa-solid fa-shield-halved"></i> PERSONERÍA JURÍDICA Nº 254.537 &bull; MINISTERIO DE JUSTICIA
+        </div>
+        <h1 class="hero-title font-heading">ONG Y CORPORACIÓN UIAMA CHILE</h1>
+        <p class="hero-description">
+          Unión Internacional de Artistas Marciales y de Artes Internas de América y el Mundo. Corporación dedicada a unir, potenciar y reconocer a los estilos, instructores y academias independientes en todo Chile y el Mundo.
+        </p>
+
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+          <a href="#members" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Ver Academias Afiliadas</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-user-plus"></i> Solicitud de Afiliación</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card glass-panel">
+            <div class="stat-number font-heading">+12</div>
+            <div class="stat-label">Academias en el Mundo</div>
+          </div>
+          <div class="stat-card glass-panel">
+            <div class="stat-number font-heading">+18</div>
+            <div class="stat-label">Maestros & Profesores</div>
+          </div>
+          <div class="stat-card glass-panel">
+            <div class="stat-number font-heading">+65</div>
+            <div class="stat-label">Países Integrados</div>
+          </div>
+          <div class="stat-card glass-panel">
+            <div class="stat-number font-heading">2008</div>
+            <div class="stat-label">Año de Fundación</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Áreas de Acción Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nuestros Pilares</span>
+          <h2 class="section-title font-heading">Áreas de Trabajo Institucional</h2>
+          <p class="section-subtitle">Promovemos un desarrollo integral para practicantes y docentes de artes marciales en Chile y el Mundo.</p>
+        </div>
+
+        <div id="areas-grid" class="areas-grid">
+          <!-- Populated dynamically from app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Acerca de y Presidente Section -->
+    <section id="about" class="section" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Antecedentes & Liderazgo</span>
+          <h2 class="section-title font-heading">Acerca de UIAMA Chile</h2>
+        </div>
+
+        <div id="president-container">
+          <!-- Populated dynamically from app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Directiva Section -->
+    <section id="board" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Cuerpo Marcial</span>
+          <h2 class="section-title font-heading">Directiva & Maestros Oficiales</h2>
+          <p class="section-subtitle">Profesionales a cargo del desarrollo técnico y corporativo de UIAMA Chile.</p>
+        </div>
+
+        <div id="board-grid" class="board-grid">
+          <!-- Populated dynamically from app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Miembros & Academias Directory Section -->
+    <section id="members" class="section" style="background: rgba(220, 38, 38, 0.02);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Directorio Nacional e Internacional</span>
+          <h2 class="section-title font-heading">Academias y Escuelas Afiliadas</h2>
+          <p class="section-subtitle">Buscador en tiempo real de escuelas de artes marciales reconocidas por la corporación.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar glass-panel" style="padding: 20px;">
+          <input type="text" id="member-search" class="search-input" placeholder="🔍 Buscar por nombre de academia, instructor, estilo o ciudad...">
+          <select id="member-region-filter" class="select-input">
+            <option value="">Todas las Regiones / Países</option>
+          </select>
+        </div>
+
+        <!-- Directory Grid -->
+        <div id="directory-grid" class="directory-grid">
+          <!-- Populated dynamically from app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería de Fotos Section -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Registro Fotográfico</span>
+          <h2 class="section-title font-heading">Galería de Eventos & Álbumes</h2>
+          <p class="section-subtitle">Explora las fotografías oficiales de campeonatos, exámenes y seminarios.</p>
+        </div>
+
+        <!-- Album Filter Pills -->
+        <div id="gallery-albums-nav" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 35px;">
+          <!-- Dynamic Album Pills -->
+        </div>
+
+        <!-- Photo Grid -->
+        <div id="gallery-photos-grid" class="gallery-grid">
+          <!-- Dynamic Photo Grid -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Arbitraje Section -->
+    <section id="arbitration" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Reglamentación Oficial</span>
+          <h2 class="section-title font-heading">Cuerpo de Arbitraje & Jueceo</h2>
+          <p class="section-subtitle">Capacitación y estándares internacionales para torneos y campeonatos.</p>
+        </div>
+
+        <div class="glass-panel" style="padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; align-items: center;">
+          <div>
+            <h3 class="font-heading" style="font-size: 1.6rem; color: var(--accent-gold); margin-bottom: 15px;">
+              <i class="fa-solid fa-scale-balanced"></i> Homologación de Juzgamiento
+            </h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">
+              UIAMA Chile cuenta con un departamento especializado de arbitraje marcial para garantizar la máxima transparencia en torneos de Formas (Katas), Point Fighting, Light Contact, Kickboxing y Grappling.
+            </p>
+            <ul style="list-style: none; color: var(--text-main); font-weight: 600;">
+              <li style="margin-bottom: 8px;"><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Cursos de formación y certificación de árbitros</li>
+              <li style="margin-bottom: 8px;"><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Reglamento unificado para competencias abiertas</li>
+              <li style="margin-bottom: 8px;"><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Sistema de puntaje electrónico y planillas estandarizadas</li>
+            </ul>
+          </div>
+          <div style="background: rgba(220, 38, 38, 0.1); border: 1px solid var(--primary-glow); padding: 30px; border-radius: var(--radius-md); text-align: center;">
+            <i class="fa-solid fa-certificate" style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;"></i>
+            <h4 class="font-heading" style="font-size: 1.2rem; margin-bottom: 10px;">Seminario Anual de Árbitros 2026</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+              Inscripciones abiertas para la acreditación oficial de jueces nacionales e internacionales.
+            </p>
+            <a href="#contact" class="btn btn-gold btn-sm"><i class="fa-solid fa-pen-to-square"></i> Solicitar Información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos Section -->
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Documentación</span>
+          <h2 class="section-title font-heading">Centro de Recursos Descargables</h2>
+          <p class="section-subtitle">Descarga estatutos oficiales, formularios de afiliación y reglamentos.</p>
+        </div>
+
+        <div id="resources-grid" class="resources-grid">
+          <!-- Populated dynamically from app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto & Afiliación Section -->
+    <section id="contact" class="section" style="background: rgba(0,0,0,0.2);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contacto Oficial</span>
+          <h2 class="section-title font-heading">Únete a la ONG UIAMA CHILE</h2>
+          <p class="section-subtitle">Envía tu mensaje o solicitud de afiliación para tu escuela o academia.</p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Contact Info Card -->
+          <div class="glass-panel" style="padding: 35px;">
+            <h3 class="font-heading" style="font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-gold);">
+              Información Institucional
+            </h3>
+            
+            <div style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+              <i class="fa-solid fa-landmark" style="color: var(--primary); font-size: 1.4rem; margin-top: 4px;"></i>
+              <div>
+                <strong>ONG Y CORPORACIÓN UIAMA CHILE</strong>
+                <div style="font-size: 0.9rem; color: var(--text-muted);">Personería Jurídica Nº: 254.537 - Ministerio de Justicia</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+              <i class="fa-solid fa-location-dot" style="color: var(--primary); font-size: 1.4rem; margin-top: 4px;"></i>
+              <div>
+                <strong>Sede Central</strong>
+                <div style="font-size: 0.9rem; color: var(--text-muted);">Región Metropolitana, Santiago, Chile</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+              <i class="fa-solid fa-envelope" style="color: var(--primary); font-size: 1.4rem; margin-top: 4px;"></i>
+              <div>
+                <strong>Correo Oficial Principal</strong>
+                <div style="font-size: 1rem; color: var(--accent-gold); font-weight: 700;">uiamachile@gmail.com</div>
+              </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--dark-border); padding-top: 20px; margin-top: 25px;">
+              <h4 class="font-heading" style="margin-bottom: 10px; color: var(--accent-gold);">Presencia Internacional</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                Afiliados a las siguientes entidades internacionales : CONINTMASTERS, CONFBEC, FECAP, ACKAM, CBLAM, UIA.ORG, IUOTH.COM, AFSO LATAM, TECHSOUP, GOODSTACK, MEMBER OF GOOGLE NONPROFITS ORGANIZATION
+              </p>
+            </div>
+          </div>
+
+          <!-- Public Contact Form -->
+          <form id="public-contact-form" class="glass-panel" style="padding: 35px;">
+            <h3 class="font-heading" style="font-size: 1.5rem; margin-bottom: 20px;">Formulario de Solicitud</h3>
+            
+            <div class="form-group">
+              <label for="cnt-name">Nombre Completo *</label>
+              <input type="text" id="cnt-name" class="form-control" required placeholder="Tu nombre y apellido">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div class="form-group">
+                <label for="cnt-email">Correo Electrónico *</label>
+                <input type="email" id="cnt-email" class="form-control" required placeholder="ejemplo@correo.com">
+              </div>
+              <div class="form-group">
+                <label for="cnt-phone">Teléfono / WhatsApp</label>
+                <input type="text" id="cnt-phone" class="form-control" placeholder="+56 9 1234 5678">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div class="form-group">
+                <label for="cnt-country">País *</label>
+                <input type="text" id="cnt-country" class="form-control" required placeholder="Ej: Chile, Argentina, México...">
+              </div>
+              <div class="form-group">
+                <label for="cnt-academy">Nombre de tu Escuela / Academia</label>
+                <input type="text" id="cnt-academy" class="form-control" placeholder="Ej: Escuela Kempo Santiago">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cnt-message">Mensaje o Consulta *</label>
+              <textarea id="cnt-message" class="form-control" required placeholder="Cuéntanos sobre tu escuela, estilo o consulta de afiliación..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Admin System (CRUD) -->
+  <div id="admin-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title font-heading">
+          <i class="fa-solid fa-sliders" style="color: var(--accent-gold);"></i> Panel de Control Autogestionable (Sistema CRUD)
+        </div>
+        <button id="close-admin-btn" class="modal-close" title="Cerrar Panel">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Auth Section -->
+        <div id="admin-auth-section" class="glass-panel" style="max-width: 450px; margin: 30px auto; padding: 35px; text-align: center;">
+          <i class="fa-solid fa-lock" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+          <h3 class="font-heading" style="margin-bottom: 10px;">Acceso Administrativo</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 25px;">
+            Ingresa la clave para gestionar los contenidos de UIAMA Chile.
+          </p>
+
+          <form id="admin-login-form">
+            <div class="form-group">
+              <input type="password" id="admin-pass-input" class="form-control" placeholder="Ingresa tu contraseña" required style="text-align: center;">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-key"></i> Iniciar Sesión
+            </button>
+          </form>
+        </div>
+
+        <!-- Dashboard Section (Shown after auth) -->
+        <div id="admin-dashboard-section" style="display: none;">
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div class="admin-tabs">
+              <button class="admin-tab active" data-tab="members"><i class="fa-solid fa-school"></i> Academias</button>
+              <button class="admin-tab" data-tab="board"><i class="fa-solid fa-user-tie"></i> Directiva</button>
+              <button class="admin-tab" data-tab="gallery"><i class="fa-solid fa-images"></i> Galería & Álbumes</button>
+              <button class="admin-tab" data-tab="news"><i class="fa-solid fa-newspaper"></i> Noticias & Eventos</button>
+              <button class="admin-tab" data-tab="resources"><i class="fa-solid fa-folder-open"></i> Documentos</button>
+              <button class="admin-tab" data-tab="messages"><i class="fa-solid fa-envelope"></i> Solicitudes</button>
+              <button class="admin-tab" data-tab="backup"><i class="fa-solid fa-database"></i> Respaldo DB</button>
+            </div>
+
+            <button id="admin-logout-btn" class="btn btn-secondary btn-sm" title="Cerrar Sesión">
+              <i class="fa-solid fa-power-off"></i> Salir
+            </button>
+          </div>
+
+          <!-- Dynamic Form Container -->
+          <div id="admin-form-container"></div>
+
+          <!-- Dynamic Table Container -->
+          <div id="admin-table-container"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for Gallery Photos -->
+  <div id="lightbox-modal" class="modal-backdrop">
+    <div style="position: relative; max-width: 90vw; max-height: 90vh; text-align: center;">
+      <button class="modal-close" style="position: absolute; top: -40px; right: 0; color: #fff; font-size: 2rem;">&times;</button>
+      <img id="lightbox-img" src="" style="max-width: 100%; max-height: 80vh; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); object-fit: contain;">
+      <div id="lightbox-title" style="margin-top: 15px; color: #fff; font-weight: 700; font-size: 1.1rem;"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="font-heading">ONG Y CORPORACIÓN UIAMA CHILE</h3>
+          <p style="margin-bottom: 15px;">
+            Asociación de Derecho Privado sin fines de lucro. Personería Jurídica Nº 254.537 del Ministerio de Justicia de Chile.
+          </p>
+          <div style="font-weight: 700; color: var(--accent-gold);">Presidente: Fernando Guerrero Tala</div>
+        </div>
+
+        <div>
+          <h4 class="font-heading" style="color: var(--text-main); margin-bottom: 16px;">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de y Antecedentes</a></li>
+            <li><a href="#board">Directiva Oficial</a></li>
+            <li><a href="#members">Directorio de Academias</a></li>
+            <li><a href="#gallery">Galería de Fotos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading" style="color: var(--text-main); margin-bottom: 16px;">Recursos & Arbitraje</h4>
+          <ul class="footer-links">
+            <li><a href="#arbitration">Cuerpo de Arbitraje</a></li>
+            <li><a href="#resources">Estatutos & Reglamentos</a></li>
+            <li><a href="#contact">Solicitud de Afiliación</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading" style="color: var(--text-main); margin-bottom: 16px;">Redes & Contacto</h4>
+          <p style="margin-bottom: 10px;"><i class="fa-solid fa-location-dot"></i> Santiago, Chile</p>
+          <p style="margin-bottom: 10px;"><i class="fa-solid fa-envelope" style="color:var(--accent-gold)"></i> uiamachile@gmail.com</p>
+          <div style="display: flex; gap: 12px; margin-top: 15px;">
+            <a href="#" style="color: var(--text-main); font-size: 1.3rem;"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" style="color: var(--text-main); font-size: 1.3rem;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: var(--text-main); font-size: 1.3rem;"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ONG Y CORPORACIÓN UIAMA CHILE. Todos los derechos reservados. Sistema Autogestionable CRUD con Galería de Fotos y Auto-Actualización.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase Cloud SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+
+  <!-- App Scripts -->
+  <script src="store.js"></script>
+  <script src="admin.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
